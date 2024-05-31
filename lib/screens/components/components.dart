@@ -1,3 +1,5 @@
+export 'package:flutter_app_elvive/screens/components/menu_logo_pj.dart';
+export 'package:flutter_app_elvive/screens/components/home_button.dart';
 export 'package:flutter_app_elvive/screens/artist_screen.dart';
 export 'package:flutter_app_elvive/screens/components/rounded_container.dart';
 export 'package:flutter_app_elvive/screens/components/imagen_circular.dart';
