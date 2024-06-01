@@ -18,16 +18,18 @@ class HomeScreen extends StatelessWidget {
           return const Stack(
             children: [
               BackgroundImage(),
-              Column(
-                children: [
-                  MenuLogoPj(),
-                  RoundedContainer(borderRadius: 40, color: appWhiteColor, textContainer: 'Artistas Invitados'),
-                  SizedBox(height: 5,),
-                  ArtistsList(),
-                  RoundedContainer(borderRadius: 40, color: appWhiteColor, textContainer: 'Eventos'),
-                  SizedBox(height: 5,),
-                  LiveList(),
-                ],
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    MenuLogoPj(),
+                    RoundedContainer(borderRadius: 40, color: appWhiteColor, textContainer: 'Artistas Invitados'),
+                    SizedBox(height: 5,),
+                    ArtistsList(),
+                    RoundedContainer(borderRadius: 40, color: appWhiteColor, textContainer: 'Eventos'),
+                    SizedBox(height: 5,),
+                    LiveList(),
+                  ],
+                ),
               ),
               //Text('Home Screen'),
               // Puedes agregar más widgets aquí

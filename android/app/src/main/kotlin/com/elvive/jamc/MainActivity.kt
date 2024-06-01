@@ -1,4 +1,4 @@
-package com.elvive.jamc.flutter_app_elvive
+package com.elvive.jamc
 
 import io.flutter.embedding.android.FlutterActivity
 

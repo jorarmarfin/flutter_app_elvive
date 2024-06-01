@@ -10,10 +10,21 @@ class HomeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FloatingActionButton(
-      onPressed: () => context.pushNamed('home_screen'),
-      backgroundColor: appOrangeColor,
-      child:const Icon(Icons.home, color: appWhiteColor),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        FloatingActionButton(
+          onPressed: () => context.pushNamed('maps_screen'),
+          backgroundColor: appOrangeColor,
+          child:const Icon(Icons.location_on, color: appWhiteColor),
+        ),
+        const SizedBox(height: 10,),
+        FloatingActionButton(
+          onPressed: () => context.pushNamed('home_screen'),
+          backgroundColor: appOrangeColor,
+          child:const Icon(Icons.home, color: appWhiteColor),
+        ),
+      ],
     );
   }
 
