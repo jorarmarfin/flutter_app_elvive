@@ -29,7 +29,8 @@ class HomeButton extends StatelessWidget {
         ),
       ],
     );
-  }//https://www.google.com/maps/place//@-12.023887,-76.8860689,18z?entry=ttu
+  }
+
   Future<void> _openGoogleMaps() async {
     final Uri url = Uri.parse('https://www.google.com/maps/search/?api=1&query=$latitude,$longitude&z=18.28');
     if (await launchUrl(url)) {
