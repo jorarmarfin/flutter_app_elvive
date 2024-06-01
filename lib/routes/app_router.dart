@@ -29,11 +29,6 @@ final appRouter = GoRouter(initialLocation: '/', routes: <RouteBase>[
         return EventScreen(id: int.parse(id.toString()));
       }
   ),
-  GoRoute(
-      path: '/map',
-      name: MapsScreen.routeName,
-      builder: (context, state) => const MapsScreen()
-  ),
 
 ]);
 

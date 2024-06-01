@@ -14,7 +14,7 @@ class HomeButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         FloatingActionButton(
-          onPressed: () => context.pushNamed('maps_screen'),
+          onPressed: () {},
           backgroundColor: appOrangeColor,
           child:const Icon(Icons.location_on, color: appWhiteColor),
         ),
