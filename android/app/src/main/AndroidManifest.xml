@@ -2,7 +2,7 @@
           package="com.elvive.jamc">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="elvive"
+        android:label="El vive"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

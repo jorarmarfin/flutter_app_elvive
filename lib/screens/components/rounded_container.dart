@@ -5,12 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 class RoundedContainer extends StatelessWidget {
   final double borderRadius;
   final Color color;
+  final Color textColor;
   final String textContainer;
 
   const RoundedContainer({
     super.key,
     required this.borderRadius,
-    required this.color, required this.textContainer,
+    required this.color, required this.textContainer, this.textColor=appBlueColor,
   });
 
   @override
@@ -21,7 +22,7 @@ class RoundedContainer extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(borderRadius),
       ),
-      child: Text(textContainer, style: GoogleFonts.mynerve(fontSize: 20, color: appBlueColor, fontWeight: FontWeight.bold)),
+      child: Text(textContainer, style: GoogleFonts.mynerve(fontSize: 20, color: textColor, fontWeight: FontWeight.bold)),
     );
   }
 }

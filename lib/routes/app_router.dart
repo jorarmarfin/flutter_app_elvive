@@ -30,5 +30,6 @@ final appRouter = GoRouter(initialLocation: '/', routes: <RouteBase>[
       }
   ),
 
+
 ]);
 

@@ -6,6 +6,9 @@ const Color appBlueColor = Color(0xFF3F3F92);
 const imgIntro = 'assets/images/intro.png';
 const imgFondo = 'assets/images/fondo.png';
 const imgLogo = 'assets/images/logo500x500.png';
+const iconFacebook = 'assets/icons/icon_facebook.svg';
+const iconSpotify = 'assets/icons/icon_spotify.svg';
+const iconYoutube = 'assets/icons/icon_youtube.svg';
 class AppTheme {
   AppTheme();
   ThemeData getTheme()=>ThemeData(
@@ -20,5 +23,13 @@ final BoxDecoration appBoxDecoration = BoxDecoration(
   border: Border.all(
     color: appWhiteColor,
     width: 5,
+  ),
+);
+final BoxDecoration appBoxDecorationVideo = BoxDecoration(
+  color: appOrangeColor,
+  borderRadius: BorderRadius.circular(10),
+  border: Border.all(
+    color: appOrangeColor,
+    width: 1,
   ),
 );

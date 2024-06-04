@@ -16,6 +16,7 @@ class HomeButton extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
+        const SizedBox(height: 10,),
         FloatingActionButton(
           onPressed: _openGoogleMaps,
           backgroundColor: appOrangeColor,
@@ -39,5 +40,6 @@ class HomeButton extends StatelessWidget {
       throw 'No se pudo abrir $url';
     }
   }
+
 
 }
