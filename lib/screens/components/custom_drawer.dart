@@ -22,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: appOrangeColor,
             ),
-            child: Image(image: AssetImage(imgLogo)),
+            child: Image(image: AssetImage(imgLogoPj)),
           ),
           ListTile(
             leading:const Icon(Icons.home,color: appWhiteColor,size: 40,),
@@ -30,19 +30,13 @@ class CustomDrawer extends StatelessWidget {
             onTap: (){context.pushNamed('home_screen');},
           ),
           ListTile(
-            leading:const Icon(Icons.waving_hand,color: appWhiteColor,size: 40,),
-            title: Text('Vive tu formación',style: style,),
+            leading:const Icon(Icons.settings_accessibility,color: appWhiteColor,size: 40,),
+            title: Text('Pastoral Juvenil',style: style,),
             onTap: () {
-              context.pushNamed('event_screen', pathParameters: {'id': '0'});
+              context.pushNamed('pastoral_screen');
             },
           ),
-          ListTile(
-            leading:const Icon(Icons.waving_hand,color: appWhiteColor,size: 40,),
-            title: Text('Vive tu alegría',style: style,),
-            onTap: () {
-              context.pushNamed('event_screen', pathParameters: {'id': '1'});
-            },
-          ),
+
 
         ],
       ),

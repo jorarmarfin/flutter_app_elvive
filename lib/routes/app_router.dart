@@ -29,6 +29,11 @@ final appRouter = GoRouter(initialLocation: '/', routes: <RouteBase>[
         return EventScreen(id: int.parse(id.toString()));
       }
   ),
+  GoRoute(
+      path: '/pastoral',
+      name: PastoralScreen.routeName,
+      builder: (context, state) => const PastoralScreen()
+  ),
 
 
 ]);

@@ -14,9 +14,9 @@ class EventScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     EventModel event = eventPaths[id];
     TextStyle style = GoogleFonts.mynerve(
-        fontSize: 20, color: appWhiteColor, fontWeight: FontWeight.bold);
+        fontSize: 30, color: appWhiteColor, fontWeight: FontWeight.bold);
     TextStyle styleText = GoogleFonts.mynerve(
-        fontSize: 14, color: appWhiteColor, fontWeight: FontWeight.bold);
+        fontSize: 25, color: appWhiteColor, fontWeight: FontWeight.bold);
 
     return Scaffold(
       floatingActionButton: const HomeButton(),

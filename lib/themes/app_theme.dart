@@ -6,6 +6,7 @@ const Color appBlueColor = Color(0xFF3F3F92);
 const imgIntro = 'assets/images/intro.png';
 const imgFondo = 'assets/images/fondo.png';
 const imgLogo = 'assets/images/logo500x500.png';
+const imgLogoPj = 'assets/images/logopj.png';
 const iconFacebook = 'assets/icons/icon_facebook.svg';
 const iconSpotify = 'assets/icons/icon_spotify.svg';
 const iconYoutube = 'assets/icons/icon_youtube.svg';
