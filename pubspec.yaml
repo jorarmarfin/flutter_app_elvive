@@ -3,7 +3,7 @@ description: "A new Flutter project."
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+3
+version: 1.0.0+4
 
 environment:
   sdk: '>=3.4.0 <4.0.0'
@@ -47,7 +47,7 @@ flutter_launcher_icons:
   
 flutter_native_splash:
   color: "#ffffff" # Color de fondo de la pantalla de inicio
-  image: assets/splash/splash1.png # Ruta a la imagen de la pantalla de inicio
+  image: assets/splash/splash3.png # Ruta a la imagen de la pantalla de inicio
   android: true # Habilitar para Android
   ios: false # Habilitar para iOS
   web: false # Opcional, habilitar para web si es necesario

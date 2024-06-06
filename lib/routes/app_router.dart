@@ -34,6 +34,11 @@ final appRouter = GoRouter(initialLocation: '/', routes: <RouteBase>[
       name: PastoralScreen.routeName,
       builder: (context, state) => const PastoralScreen()
   ),
+  GoRoute(
+      path: '/god',
+      name: GodScreen.routeName,
+      builder: (context, state) => const GodScreen()
+  ),
 
 
 ]);

@@ -26,14 +26,21 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading:const Icon(Icons.home,color: appWhiteColor,size: 40,),
-            title: Text('Inicio',style: style,),
+            title: Text('Vive 2024',style: style,),
             onTap: (){context.pushNamed('home_screen');},
           ),
           ListTile(
             leading:const Icon(Icons.settings_accessibility,color: appWhiteColor,size: 40,),
-            title: Text('Pastoral Juvenil',style: style,),
+            title: Text('Quienes somos',style: style,),
             onTap: () {
               context.pushNamed('pastoral_screen');
+            },
+          ),
+          ListTile(
+            leading:const Icon(Icons.add,color: appWhiteColor,size: 40,),
+            title: Text('Santísimo',style: style,),
+            onTap: () {
+              context.pushNamed('god_screen');
             },
           ),
 

@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_elvive/data/prayer.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+import '../providers/youtube_player_controller_provider.dart';
 import '../themes/app_theme.dart';
 import 'components/components.dart';
 
-class PastoralScreen extends StatelessWidget {
-  static const String routeName = 'pastoral_screen';
-  const PastoralScreen({super.key});
+class GodScreen extends ConsumerWidget {
+  static const String routeName = 'god_screen';
+  const GodScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,WidgetRef ref) {
+    final controller = ref.watch(videoControllerProvider('Dd7YbWyPcQo'));
     TextStyle styleTitle = GoogleFonts.mynerve(
         fontSize: 30, color: appWhiteColor, fontWeight: FontWeight.bold);
     TextStyle styleText = GoogleFonts.mynerve(
         fontSize: 25, color: appWhiteColor, fontWeight: FontWeight.bold);
-    const aboutMe= '''Somos una comunidad de jóvenes comprometidos con la misión evangelizadora de la Iglesia Católica. Pertenecemos a la Parroquia San Benito de la Vicaria III de la Diocesis de Chosica. Los invitamos a ser parte de la Pastoral Juvenil .Bienvenidos!!!''';
-    const  whatDoWeDo = 'Promovemos ENCUENTROS significativos y trascendentes que lleven a conocer, amar y servir a Cristo';
     return Scaffold(
       floatingActionButton: const HomeButton(),
       body: Builder(builder: (context) {
@@ -26,23 +29,26 @@ class PastoralScreen extends StatelessWidget {
               child: Column(
                 children: [
                   const MenuLogoPj(),
-                  Container(
-                      margin: const EdgeInsets.all(10),
-                      decoration: appBoxDecoration,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(imgLogoPj),
-                      )),
-                  Text('PASTORAL JUVENIL', style: styleTitle),
+                  YoutubePlayer(
+                    controller: controller,
+                    showVideoProgressIndicator: true,
+                    progressIndicatorColor: Colors.orange,
+                  ),
+                  Text('ORACIÓN', style: styleTitle),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Text(aboutMe, style: styleText),
+                    child: Text(holyHour, style: styleText),
                   ),
-                  Text('Que hacemos', style: styleTitle),
+                  Text('ORACIÓN JUVENIL', style: styleTitle),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Text(whatDoWeDo, style: styleText),
+                    child: Text(youngPrayer, style: styleText),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(virgenMaryPrayer, style: styleText),
+                  ),
+
                   const SizedBox(
                     height: 30,
                   ),

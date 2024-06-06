@@ -77,10 +77,12 @@ List<EventModel> eventPaths = [
     description: 'Vive tu alegría, donde podrás disfrutar de diferentes juegos como',
     img: 'assets/images/vive_02.jpg',
     details: [
-      EventDetails(title: 'Luz roja luz verde', subtitle: ''),
-      EventDetails(title: 'Trivias', subtitle: ''),
-      EventDetails(title: 'Michi humano', subtitle: ''),
-      EventDetails(title: 'Tutti frutti humano', subtitle: ''),
+      EventDetails(title: '10:00 - 10:45 am', subtitle: 'CANTA Y GANA'),
+      EventDetails(title: '10:00 - 10:45 am', subtitle: 'TUTI FRUTI'),
+      EventDetails(title: '10:00 - 10:45 pm', subtitle: 'JALA LA SOGA'),
+      EventDetails(title: '10:00 - 10:45 pm', subtitle: 'MICHI HUMANO'),
+      EventDetails(title: '10:50 - 11:30 am', subtitle: 'TRIVIAS'),
+      EventDetails(title: '10:50 - 11:30 pm	', subtitle: 'CARRERA 2 EN 2'),
 
     ]
   ),
@@ -88,19 +90,21 @@ List<EventModel> eventPaths = [
     description: 'Vive tus talleres donde aprenderás técnicas manuales y artísticas como ',
     img: 'assets/images/vive_03.jpg',
       details: [
-        EventDetails(title: 'Taller de Plastilina', subtitle: ''),
-        EventDetails(title: 'Taller de Origami', subtitle: ''),
-        EventDetails(title: 'Taller de Canto', subtitle: ''),
-        EventDetails(title: 'Taller de Dibujo', subtitle: ''),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE PLASTILINA'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE ORIGAMI'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE CANTO'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE DIBUJO'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE MUSICA'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE CLOW'),
+        EventDetails(title: '02:00 - 04:50 pm', subtitle: 'TALLER DE BAILE'),
+
       ]
   ),
   EventModel(
     description: 'Vive tu talento, donde presentar mostrar todas tus habilidades artísticas como ',
     img: 'assets/images/vive_04.jpg',
     details: [
-      EventDetails(title: 'Canto', subtitle: ''),
-      EventDetails(title: 'Danza', subtitle: ''),
-      EventDetails(title: 'Actuación', subtitle: ''),
+      EventDetails(title: '02:00 - 04:50 pm', subtitle: 'PRESENTACIÓN DE LOS TALENTOS'),
     ]
   ),
 

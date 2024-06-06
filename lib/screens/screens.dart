@@ -1,3 +1,4 @@
+export 'package:flutter_app_elvive/screens/god_screen.dart';
 export 'package:flutter_app_elvive/screens/pastoral_screen.dart';
 export 'package:flutter_app_elvive/screens/event_screen.dart';
 export 'package:flutter_app_elvive/screens/home_screen.dart';
