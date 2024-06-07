@@ -14,7 +14,7 @@ class GodScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context,WidgetRef ref) {
-    final controller = ref.watch(videoControllerProvider('Dd7YbWyPcQo'));
+    final controller = ref.watch(videoControllerProvider('N5SzVNMP4fs'));
     TextStyle styleTitle = GoogleFonts.mynerve(
         fontSize: 30, color: appWhiteColor, fontWeight: FontWeight.bold);
     TextStyle styleText = GoogleFonts.mynerve(
@@ -39,7 +39,6 @@ class GodScreen extends ConsumerWidget {
                     padding: const EdgeInsets.all(10.0),
                     child: Text(holyHour, style: styleText),
                   ),
-                  Text('ORACIÓN JUVENIL', style: styleTitle),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Text(youngPrayer, style: styleText),

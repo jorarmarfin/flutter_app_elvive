@@ -9,14 +9,14 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const version = 'Versión 1.0.7';
     TextStyle style =GoogleFonts.mynerve(
         fontSize: 20,
         color: appWhiteColor,
         fontWeight: FontWeight.bold);
     return Drawer(
       backgroundColor: appOrangeColor,
-      child: ListView(
-        padding: EdgeInsets.zero,
+      child: Column(
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
@@ -38,11 +38,13 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading:const Icon(Icons.add,color: appWhiteColor,size: 40,),
-            title: Text('Santísimo',style: style,),
+            title: Text('Adoración al Santísimo',style: style,),
             onTap: () {
               context.pushNamed('god_screen');
             },
           ),
+          const Spacer(),
+          const Text(version, style: TextStyle(color: appWhiteColor, ))
 
 
         ],

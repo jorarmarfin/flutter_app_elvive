@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../data/pastoral.dart';
 import '../themes/app_theme.dart';
 import 'components/components.dart';
 
@@ -14,8 +15,6 @@ class PastoralScreen extends StatelessWidget {
         fontSize: 30, color: appWhiteColor, fontWeight: FontWeight.bold);
     TextStyle styleText = GoogleFonts.mynerve(
         fontSize: 25, color: appWhiteColor, fontWeight: FontWeight.bold);
-    const aboutMe= '''Somos una comunidad de jóvenes comprometidos con la misión evangelizadora de la Iglesia Católica. Pertenecemos a la Parroquia San Benito de la Vicaria III de la Diocesis de Chosica. Los invitamos a ser parte de la Pastoral Juvenil .Bienvenidos!!!''';
-    const  whatDoWeDo = 'Promovemos ENCUENTROS significativos y trascendentes que lleven a conocer, amar y servir a Cristo';
     return Scaffold(
       floatingActionButton: const HomeButton(),
       body: Builder(builder: (context) {

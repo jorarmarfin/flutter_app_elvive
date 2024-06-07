@@ -6,7 +6,7 @@ List<EventModel> eventPaths = [
     img: 'assets/images/vive_07.jpg',
     details: [
       EventDetails(
-        title: 'Hora: 10:00 am - 11:00 am',
+        title: '10:00 am - 11:00 am',
         subtitle: 'Testimonio de Noviazgo',
       ),
       EventDetails(

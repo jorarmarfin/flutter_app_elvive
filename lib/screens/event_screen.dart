@@ -16,7 +16,7 @@ class EventScreen extends StatelessWidget {
     TextStyle style = GoogleFonts.mynerve(
         fontSize: 30, color: appWhiteColor, fontWeight: FontWeight.bold);
     TextStyle styleText = GoogleFonts.mynerve(
-        fontSize: 25, color: appWhiteColor, fontWeight: FontWeight.bold);
+        fontSize: 20, color: appWhiteColor, fontWeight: FontWeight.bold);
 
     return Scaffold(
       floatingActionButton: const HomeButton(),
@@ -64,6 +64,9 @@ class EventScreen extends StatelessWidget {
                             );
                           },
                         ),
+                  const SizedBox(
+                    height: 30,
+                  ),
                 ],
               ),
             ),
